@@ -1,4 +1,13 @@
 package com.example.demo.dao.impl;
 
-public class BookDaoImpl {
+import com.example.demo.dao.BookDao;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class BookDaoImpl implements BookDao {
+
+    private final JdbcTemplate jdbcTemplate;
+
+    public BookDaoImpl(final JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 }

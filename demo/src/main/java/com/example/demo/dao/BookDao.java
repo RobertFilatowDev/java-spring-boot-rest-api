@@ -1,4 +1,4 @@
 package com.example.demo.dao;
 
-public class BookDao {
+public interface BookDao {
 }
